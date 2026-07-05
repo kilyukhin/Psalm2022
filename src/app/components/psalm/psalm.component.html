@@ -23,7 +23,7 @@
         }">
     <span *ngIf="!s.t">
       <i>{{s.i || s.n}}</i>
-      <span [innerHTML]="s.v | safeHtml"
+      <span [innerHTML]="s.v + ' ' | safeHtml"
             [style.color]="getFontColor()">
       </span>
       <br/>
